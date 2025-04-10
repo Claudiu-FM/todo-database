@@ -1,11 +1,13 @@
 version: '3.8'
+
 services:
   postgres:
     image: postgres:15.2
+    container_name: todo_postgres
     restart: always
     environment:
       POSTGRES_USER: claudiu
-      POSTGRES_PASSWORD: parolaSuperSigura
+      POSTGRES_PASSWORD: parola1234
       POSTGRES_DB: todo_db
     ports:
       - "9000:5432"
